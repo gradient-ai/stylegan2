@@ -11,14 +11,14 @@ There are a few prerequisites you will need to have in place:
 3. Create your own copy of this repo using the "Use this template" button in Github.
 4. Create a github connected project following the instructions on the Gradient Projects page.
 5. Finally, you will need to modify the repo url in the workflow yaml definition of your copy of this repo, so that the workflow will pull your copy of the sources instead of the copy from the template.  The workflow yaml spec for this repo is located in [**.gradient/workflows/stylegan2.yaml**](.gradient/workflows/stylegan2.yaml).
-```yaml
-jobs:
-  CloneRepo:
-    uses: git-checkout@v1
-    with:
-      url: https://github.com/gradient-ai/stylegan2.git # change this url to your repo link
-```
-Once you modify this url, commit and push your changes to your repo copy.
+   ```yaml
+   jobs:
+     CloneRepo:
+       uses: git-checkout@v1
+       with:
+         url: https://github.com/gradient-ai/stylegan2.git # change this url to your repo link
+   ```
+   Once you modify this url, commit and push your changes to your repo copy.
 6. After pushing this above change you should see a new Workflow defined, and an initial workflow run, under your repo's project in the Gradient web interface.
 
 
