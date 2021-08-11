@@ -8,9 +8,16 @@ Once you create your own copy of this repo and add the repo to a project in your
 There are a few prerequisites you will need to have in place:
 1. A Paperspace Gradient account with a subscription that supports GPU machine access, and Gradient github integration.
 2. You will need a defined Gradient dataset in your account named **demo-dataset**.  If you go through the sample demo workflow in the Gradient web interface you will already have that dataset.
-3. Create your own copy of this repo using the "use template" button in Github.
+3. Create your own copy of this repo using the "Use thistemplate" button in Github.
 4. Create a project from this repo in your Gradient account, following the instructions on the Projects page.
-5. Finally, you will need to modify the repo url in the workflow yaml definition of your copy of this repo, so that the workflow will pull your copy of the sources instead of the copy from the template.  The workflow yaml spec for this repo is located in `.gradient/workflows/stylegan2.yaml`.
+5. Finally, you will need to modify the repo url in the workflow yaml definition of your copy of this repo, so that the workflow will pull your copy of the sources instead of the copy from the template.  The workflow yaml spec for this repo is located in [**.gradient/workflows/stylegan2.yaml**](.gradient/workflows/stylegan2.yaml).
+```yaml
+jobs:
+  CloneRepo:
+    uses: git-checkout@v1
+    with:
+      url: https://github.com/gradient-ai/stylegan2.git # change this url to your repo link
+```
 6. After commiting that that final change to your copy of the repo you should see an initial workflow run under the project in the Gradient web interface.
 
 
