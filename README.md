@@ -6,10 +6,10 @@ The NVLabs sources are unchanged from the original, except for this README parag
 Once you create your own copy of this repo and add the repo to a project in your Paperspace Gradient account, you will be able to commit your own changes to the source, and have the changes automatically validated by running a Gradient workflow exercises the source below.
 
 There are a few prerequisites you will need to have in place:
-1. A Paperspace Gradient account with a subscription that supports GPU machine access, and Gradient github integration.
-2. You will need a defined Gradient dataset in your account named **demo-dataset**.  If you go through the sample demo workflow in the Gradient web interface you will already have that dataset.
-3. Create your own copy of this repo using the "Use thistemplate" button in Github.
-4. Create a project from this repo in your Gradient account, following the instructions on the Projects page.
+1. Create a [Paperspace account](https://console.paperspace.com/signup?gradient=true) with a Gradient subscription that supports GPU machine access, and Gradient github integration.  
+2. You will need a defined Gradient dataset in your account named **demo-dataset**. You can go through the [Workflow Demo](https://docs.paperspace.com/gradient/get-started/quick-start#create-a-project) which will automatically create **demo-dataset** in your account.  You can learn more about Gradient datasets [here](https://docs.paperspace.com/gradient/data/data-overview/private-datasets-repository).
+3. Create your own copy of this repo using the "Use this template" button in Github.
+4. Create a github connected project following the instructions on the Gradient Projects page.
 5. Finally, you will need to modify the repo url in the workflow yaml definition of your copy of this repo, so that the workflow will pull your copy of the sources instead of the copy from the template.  The workflow yaml spec for this repo is located in [**.gradient/workflows/stylegan2.yaml**](.gradient/workflows/stylegan2.yaml).
 ```yaml
 jobs:
@@ -18,7 +18,8 @@ jobs:
     with:
       url: https://github.com/gradient-ai/stylegan2.git # change this url to your repo link
 ```
-6. After commiting that that final change to your copy of the repo you should see an initial workflow run under the project in the Gradient web interface.
+Once you modify this url, commit and push your changes to your repo copy.
+6. After pushing this above change you should see a new Workflow defined, and an initial workflow run, under your repo's project in the Gradient web interface.
 
 
 ## StyleGAN2 &mdash; Official TensorFlow Implementation
