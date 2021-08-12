@@ -14,16 +14,8 @@ There are a few prerequisites you will need to have in place:
 6. Once github permissions are set up for Gradient, return to the Gradient project page and select the repo you created in step 3.
 7. At this point Gradient will check that the Gradient github app is associated with the repo.  If it is not, you will need to return to github and add the Gradient app to the repo.
 8. After adding the Gradient app to the repo return to the projects tab again and complete the process of associating the repo with a project.  
-9. Finally, you will need to modify the repo url in the workflow yaml definition of your copy of this repo, so that the workflow will pull your copy of the sources instead of the copy from the template.  The workflow yaml spec for this repo is located in [**.gradient/workflows/stylegan2.yaml**](.gradient/workflows/stylegan2.yaml).
-   ```yaml
-   jobs:
-     CloneRepo:
-       uses: git-checkout@v1
-       with:
-         url: https://github.com/gradient-ai/stylegan2.git # change this url to your repo link
-   ```
-10. Once you have modifed the git-checkout action url, commit and push your changes to your repo.
-11. After pushing the change you should see a new Workflow defined, and an initial workflow run, under your repo's project in the Gradient web interface.
+9. Now make a small change to the repo such as adding a blank line to the end of this README, then add, commit, and push your changes to your repo.
+10. After pushing a change you should see a new workflow created, and an initial workflow run, under your repo's project in the Gradient web interface.
 
 
 ## StyleGAN2 &mdash; Official TensorFlow Implementation
