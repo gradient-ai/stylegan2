@@ -9,7 +9,7 @@ There are a few prerequisites you will need to have in place:
 1. Create a [Paperspace account](https://console.paperspace.com/signup?gradient=true) with a Gradient subscription that supports GPU machine access, and Gradient github integration.  
 2. You will need a defined Gradient dataset in your account named **demo-dataset**. You can go through the [Workflow Demo](https://docs.paperspace.com/gradient/get-started/quick-start#create-a-project) which will automatically create **demo-dataset** in your account.  You can learn more about Gradient datasets [here](https://docs.paperspace.com/gradient/data/data-overview/private-datasets-repository).
 3. Create your own copy of this repo using the "Use this template" button in Github.
-4. Create a github connected project following the instructions on the Gradient Projects page.
+4. Create a github connected project by opening the Projects tab, pressing the "LINK A GITHUB REPO" button, and following the instructions on the next page.  Once set up, select the repo you created in step 3.
 5. Finally, you will need to modify the repo url in the workflow yaml definition of your copy of this repo, so that the workflow will pull your copy of the sources instead of the copy from the template.  The workflow yaml spec for this repo is located in [**.gradient/workflows/stylegan2.yaml**](.gradient/workflows/stylegan2.yaml).
    ```yaml
    jobs:
