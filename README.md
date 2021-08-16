@@ -7,7 +7,7 @@ Once you create your own copy of this repo and add the repo to a project in your
 
 There are a few prerequisites you will need to have in place:
 1. Create a [Paperspace account](https://console.paperspace.com/signup?gradient=true) with a Gradient subscription that supports GPU machine access, and Gradient github integration.  
-2. You will need a defined Gradient dataset in your account named **demo-dataset**. You can go through the [Workflow Demo](https://docs.paperspace.com/gradient/get-started/quick-start#create-a-project) which will automatically create **demo-dataset** in your account.  You can learn more about Gradient datasets [here](https://docs.paperspace.com/gradient/data/data-overview/private-datasets-repository).
+2. You will need a defined Gradient dataset in your account named **demo-dataset**. You can go through the [Workflow Demo](https://docs.paperspace.com/gradient/get-started/quick-start#create-a-workflow) which will automatically create **demo-dataset** in your account.  You can learn more about Gradient datasets [here](https://docs.paperspace.com/gradient/data/data-overview/private-datasets-repository).
 3. Create your own copy of this repo using the "Use this template" button in Github.
 4. Create a github connected project by opening the Projects tab, pressing the "LINK A GITHUB REPO" button, and following the instructions on the next page.
 5. You next need to authorize Gradient to access your github account if you have not done so already.
